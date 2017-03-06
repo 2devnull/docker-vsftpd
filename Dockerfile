@@ -1,5 +1,5 @@
-FROM debian:jessie-slim
-MAINTAINER Helder Correia <me@heldercorreia.com>
+FROM ntodd/video-transcoding:latest
+MAINTAINER 2devnull (vsftpd by helderco; video-transcoding Nate Todd)
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends vsftpd db5.3-util \
